@@ -17,6 +17,7 @@
     <meta property="og:description" content="" />
     <meta property="og:url" content="/" />
     <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/calendar.js"></script>
 </head>
 
 <body>
@@ -33,11 +34,14 @@
                 <ul>
                     <li>
                         <a><img src="img/anlanlan.jpg">
-                            <h4>安懒懒的生日</h4>
+                            <h4>安懒懒的生日 七月初八</h4>
                             <p>
                                 <script type="text/javascript">
                                     var now = new Date();
-                                    var date1 = new Date('2021/08/15');
+                                    //获取公历生日
+                                    var gongliStr = calendarFormatter.lunar2solar(now.getFullYear(), 7, 8);
+                                    var shengri = gongliStr.cYear + '/' + gongliStr.cMonth + '/' + gongliStr.cDay;
+                                    var date1 = new Date(shengri);
                                     var s0 = now.getTime();
                                     var s1 = date1.getTime();
                                     t1 = s1 - s0;
@@ -49,11 +53,14 @@
                     </li>
                     <li>
                         <a><img src="img/guoguo.png">
-                            <h4>果果的生日</h4>
+                            <h4>果果的生日 七月十九</h4>
                             <p>
                                 <script type="text/javascript">
                                     var now = new Date();
-                                    var date2 = new Date('2021/08/26');
+                                    //获取公历生日
+                                    var gongliStr = calendarFormatter.lunar2solar(now.getFullYear(), 7, 19);
+                                    var shengri = gongliStr.cYear + '/' + gongliStr.cMonth + '/' + gongliStr.cDay;
+                                    var date2 = new Date(shengri);
                                     var s0 = now.getTime();
                                     var s2 = date2.getTime();
                                     t2 = s2 - s0;
