@@ -1108,7 +1108,7 @@ input[type=submit]:disabled {
     top: -6px;
     width: 69px;
     height: 69px;
-    background: url(../img/love.png) no-repeat 0 0;
+    background: url(../img/love.webp) no-repeat 0 0;
     vertical-align: middle
 }
 
