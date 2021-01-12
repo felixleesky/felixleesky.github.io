@@ -78,6 +78,43 @@ video {
     font-size: 100%
 }
 
+
+/* 导航 */
+
+.navbar {
+    margin-left: 27%;
+    margin-right: 27%;
+    overflow: hidden;
+    background-color: rgb(105, 171, 233);
+}
+
+
+/* 导航栏样式 */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+
+/* 右侧链接*/
+
+.navbar a.right {
+    float: right;
+}
+
+
+/* 鼠标移动到链接的颜色 */
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
 body {
     line-height: 1;
     -webkit-text-size-adjust: none;
